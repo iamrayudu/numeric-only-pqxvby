@@ -1,0 +1,13 @@
+Number only
+<input (keypress)="numberOnly($event)" type="text" [(ngModel)]="signednum" placeholder="100" [ngModel]="dummy">
+<p> {{ tgy }} </p>
+<p> {{ signednum }} </p>
+<p> {{ dummy }} </p>
+<button class="btn btn-primary" (click)="answere()">submit</button>
+<div *ngIf="outcome">
+	<p>the number you entered is:{{ output }}</p>
+</div>
+<div *ngIf="!outcome">
+  <p>please enter a proper 3 digited integer </p>
+</div>
+<p></p>
